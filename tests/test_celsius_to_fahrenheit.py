@@ -1,5 +1,7 @@
 from pytest import approx
+
 from firstpackage.temperature import celsius_to_fahrenheit
+
 
 def test_celsius_to_fahrenheit():
     """
