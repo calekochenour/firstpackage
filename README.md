@@ -10,7 +10,7 @@
 - [firstpackage](#firstpackage)
   - [Installation](#installation)
   - [License](#license)
-  - [Cheatsheat / Global Setup / Windows 10](#cheatsheat--global-setup--windows-10)
+  - [Reference Guide / Global Setup / Windows 10](#reference-guide--global-setup--windows-10)
     - [Environment Setup](#environment-setup)
     - [`hatch` config.toml](#hatch-configtoml)
     - [Package Setup](#package-setup)
@@ -30,7 +30,7 @@ pip install firstpackage
 
 `firstpackage` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
 
-## Cheatsheat / Global Setup / Windows 10
+## Reference Guide / Global Setup / Windows 10
 
 ### Environment Setup
 
