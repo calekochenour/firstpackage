@@ -59,8 +59,7 @@ dependencies = [
   "mypy>=1.0.0",
 ]
 [tool.hatch.envs.types.scripts]
-# check = "mypy --install-types --non-interactive {args:src/firstpackage tests}"
-check = "mypy --install-types --non-interactive --fix {args:src/firstpackage tests}"
+check = "mypy --install-types --non-interactive {args:src/firstpackage tests}"
 
 [tool.coverage.run]
 source_pkgs = ["firstpackage", "tests"]
