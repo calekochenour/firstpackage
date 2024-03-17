@@ -1,18 +1,18 @@
 # firstpackage
 
-[![PyPI - Version](https://img.shields.io/pypi/v/firstpackage.svg)](https://pypi.org/project/firstpackage)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/firstpackage.svg)](https://pypi.org/project/firstpackage)
+<!-- [![PyPI - Version](https://img.shields.io/pypi/v/firstpackage.svg)](https://pypi.org/project/firstpackage)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/firstpackage.svg)](https://pypi.org/project/firstpackage) -->
 
------
+<!-- ----- -->
 
 **Table of Contents**
 
 - [firstpackage](#firstpackage)
-  - [Installation](#installation)
   - [License](#license)
+  - [Resources](#resources)
   - [Reference Guide / Global Setup / Windows 10](#reference-guide--global-setup--windows-10)
     - [Environment Setup](#environment-setup)
-    - [`hatch` config.toml](#hatch-configtoml)
+    - [hatch config.toml](#hatch-configtoml)
     - [Package Setup](#package-setup)
     - [Pacakge Build](#pacakge-build)
     - [Test PyPI](#test-pypi)
@@ -20,15 +20,26 @@
     - [conda-forge](#conda-forge)
     - [Useful commands](#useful-commands)
 
-## Installation
+<!-- ## Installation
 
 ```console
 pip install firstpackage
-```
+``` -->
 
 ## License
 
 `firstpackage` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
+## Resources
+
+This repository followed the steps in the [pyOpenSci Python Package Guide](https://www.pyopensci.org/python-package-guide/) to create an example Python package from start to completion, stopping after the package was uploaded to test PyPI.
+
+The reference guide listed below is a condensed form of the instructions, with the necessary commands and actions to complete this process (tested through the upload to test PyPI). The commands are provided without context, which is intended, as a way to contain all of the necessary steps to complete the process in a summarized form. For the full context and explanations of the "what" and "why", please see the pyOpenSci documentation.
+
+* [pyOpenSci Tutorials](https://www.pyopensci.org/python-package-guide/tutorials/intro.html)
+* [pyOpenSci Documentation](https://www.pyopensci.org/python-package-guide/documentation/index.html)
+* [pyOpenSci Packaging](https://www.pyopensci.org/python-package-guide/package-structure-code/intro.html)
+* [pyOpenSci Tests](https://www.pyopensci.org/python-package-guide/tests/index.html)
 
 ## Reference Guide / Global Setup / Windows 10
 
@@ -111,7 +122,7 @@ Use `pipx` to install `hatch`:
 pipx install hatch
 ```
 
-### `hatch` config.toml
+### hatch config.toml
 
 Open location of `hatch` config:
 
