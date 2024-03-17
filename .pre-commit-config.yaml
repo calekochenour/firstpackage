@@ -1,0 +1,74 @@
+###############################################################################
+# Install pre-commit for repo
+#  pre-commit install
+#
+# Apply all hooks to all files without committing:
+#   pre-commit run --all-files
+#
+# Apply all hooks to single file without committing:
+#   pre-commit run --files <file_name>
+#
+# Apply single hook to single file without committing:
+#   pre-commit run <hook_id> --files <file_name>
+#
+# Update revisions ('rev') in this file:
+#   pre-commit autoupdate
+###############################################################################
+
+# Set repos
+repos:
+
+# Pre-commit - https://pre-commit.com/index.html, https://pre-commit.com/hooks.html
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0  # Current as of 3/15/2024, https://github.com/pre-commit/pre-commit-hooks/releases
+    hooks:
+    # Prevent large files from being committed
+    -   id: check-added-large-files
+        args: [--maxkb=1000]  # Size in KB
+    # Check/verify yaml file syntax
+    -   id: check-yaml
+    # Ensure files end in a newline
+    -   id: end-of-file-fixer
+    # Protect specific branches from direct checkins
+    # -   id: no-commit-to-branch
+    #     args: [--branch=main]
+    # Trim trailing whitespace
+    -   id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+
+# Black - https://black.readthedocs.io/en/stable/
+-   repo: https://github.com/psf/black
+    rev: 24.3.0  # Current as of 3/15/2024, https://github.com/psf/black/releases
+    hooks:
+    -   id: black
+        # Python version - adjust as needed for project
+        language_version: python3.12
+        # Command line options - adjust as needed for project
+        args: [
+                --line-length=79,
+                --skip-string-normalization,
+                #--skip-magic-trailing-comma,
+                #--verbose
+        ]
+
+# Isort - https://pycqa.github.io/isort/index.html
+-   repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+    -   id: isort
+        args: [
+            --profile,
+            black,
+        ]
+
+# flake8 - https://flake8.pycqa.org/en/stable/
+-   repo: https://github.com/PyCQA/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+
+# mypy - https://mypy.readthedocs.io/en/stable/
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: 'v1.9.0'
+    hooks:
+    -   id: mypy
