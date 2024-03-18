@@ -45,7 +45,7 @@ The reference guide listed below is a condensed form of the instructions, with t
 
 ### Environment Setup
 
-This contains the commands used to set up the workflow environment from start to fisish (thorugh Test PyPi). For the full context, see the pyOpenSci documention.
+This contains the commands used to set up the workflow environment from start to finish (through Test PyPi). For the full context, see the pyOpenSci documentation.
 
 Initial setup (for global use):
 
