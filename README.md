@@ -348,3 +348,21 @@ Exit hatch env:
 ```console
 > exit
 ```
+
+Bump package version:
+
+```console
+> hatch version major
+```
+
+or
+
+```console
+> hatch version minor
+```
+
+or
+
+```console
+> hatch version patch
+```
