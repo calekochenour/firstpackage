@@ -287,12 +287,19 @@ about:
   license_file: LICENSE
 ```
 
-Local tests:
+Local tests.
 
-- Try to import main module (or others)
-  - `> import PACKAGE_NAME`
-- Ensure package installs properly
-  - `> pip check`
+Try to import main module (or others):
+
+```console
+> import PACKAGE_NAME
+```
+
+Ensure package installs properly:
+
+```console
+> pip check
+```
 
 Manual tasks:
 
@@ -308,24 +315,36 @@ Install from conda-forge:
 
 Update packages downloaded from scoop (PowerShell):
 
-- `scoop update`
+```console
+> scoop update
+```
 
 Reinstall latest PACKAGE_NAME version:
 
-- `python -m pip install PACKAGE_NAME -e .`
+```console
+> python -m pip install PACKAGE_NAME -e .
+```
 
 Show packages in hatch env:
 
-- `pip list`
+```console
+> pip list
+```
 
 View all environments hatch has access to:
 
-- `hatch env show`
+```console
+> hatch env show
+```
 
 Print path to active hatch env (for use with IDE env config):
 
-- `hatch env find`
+```console
+> hatch env find
+```
 
 Exit hatch env:
 
-- `exit`
+```console
+exit
+```
