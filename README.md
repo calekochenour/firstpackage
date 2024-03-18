@@ -116,7 +116,7 @@ or
 Use `pipx` to install `hatch`:
 
 ```console
-pipx install hatch
+> pipx install hatch
 ```
 
 ### hatch config.toml
@@ -177,13 +177,13 @@ Create development environment:
 See what's installed:
 
 ```console
-pip list
+> pip list
 ```
 
 Build package (sdist, wheel):
 
 ```console
-hatch build
+> hatch build
 ```
 
 ### Test PyPI
@@ -196,7 +196,7 @@ Manual tasks:
 Upload to test PyPI:
 
 ```console
-hatch publish -r test
+> hatch publish -r test
 ```
 
 usename = `__token__`
@@ -229,7 +229,7 @@ Manual tasks:
 Upload to PyPI:
 
 ```console
-hatch publish
+> hatch publish
 ```
 
 username = `__token__`
@@ -346,5 +346,5 @@ Print path to active hatch env (for use with IDE env config):
 Exit hatch env:
 
 ```console
-exit
+> exit
 ```
