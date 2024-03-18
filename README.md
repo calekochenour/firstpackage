@@ -370,5 +370,5 @@ or
 Run tests locally on multiple python versions (venv):
 
 ```console
-> hatch run all:test-cov
+> hatch run all:cov
 ```
