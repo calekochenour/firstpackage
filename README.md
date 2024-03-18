@@ -366,3 +366,9 @@ or
 ```console
 > hatch version patch
 ```
+
+Run tests locally on multiple python versions (venv):
+
+```console
+> hatch run all:test-cov
+```
