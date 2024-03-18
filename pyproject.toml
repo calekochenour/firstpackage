@@ -37,8 +37,12 @@ path = "src/firstpackage/__about__.py"
 
 [tool.hatch.envs.default]
 dependencies = [
+  # For github actions/ci testing
   "coverage[toml]>=6.5",
   "pytest",
+  # For local testing - venv
+  "pytest-cov",
+  "nox",
 ]
 [tool.hatch.envs.default.scripts]
 test = "pytest {args:tests}"
