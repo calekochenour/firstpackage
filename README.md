@@ -139,9 +139,9 @@ Manual tasks:
 
 ### Package Setup
 
-Create/initialize packagedd structure/contents:
+Create/initialize package structure/contents:
 
-```conesole
+```console
 hatch new [PACKAGE_NAME]
 ```
 
@@ -156,7 +156,7 @@ Install PACKAGE_NAME locally (editable mode), can be `venv`, `conda` or `pip`
 > python -m pip install -e .
 ```
 
-or via github
+or via GitHub
 
 ```console
 > pip install git+https://github.com/user/repo.git@branch_or_tag
@@ -199,7 +199,7 @@ Upload to test PyPI:
 > hatch publish -r test
 ```
 
-usename = `__token__`
+username = `__token__`
 
 Install package into env:
 
@@ -256,7 +256,7 @@ or (venv mac/Linux)
 
 Install grayskull:
 
-```cconsole
+```console
 > pipx install grayskull
 ```
 
