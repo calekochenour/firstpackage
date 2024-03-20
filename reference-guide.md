@@ -8,7 +8,7 @@
 | Add "versions" bucket as download source (non-primary source) | scoop bucket add versions |
 | Install pipx (latest stable version) | scoop install pipx OR scoop install main/pipx |
 | Install python (latest stable version) | scoop install python OR scoop install main/python |
-| Install specific python version (non-latest) | scoop install versions/python311 |
+| Install specific python version | scoop install versions/python311 |
 | Update PATH variable with pipx directory | pipx ensurepath |
 | Install hatch | pipx install hatch |
 | List hatch commands | hatch -h |
