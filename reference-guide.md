@@ -2,7 +2,7 @@
 
 | <!-- --> | <!-- --> |
 |---|---|
-| **Envrionment Setup** ||  |
+| ***Envrionment Setup*** ||  |
 | Set PowerShell execution policy | `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` |
 | Install Scoop | `Invoke-RestMethod -Uri https://get.scoop.sh \| Invoke-Expression` |
 | Add "main" bucket as download source | `scoop bucket add main` |
@@ -16,7 +16,7 @@
 | Open location of hatch config file | `hatch config explore` |
 | Print contents of hatch config file | `hatch config show` |
 | Install grayskull | `pipx install grayskull` |
-| **Package Development** ||  |
+| ***Package Development*** ||  |
 | Create package structure and baseline contents | `hatch new [PACKAGE_NAME]` |
 | Install package locally in editable mode | `python -m pip install -e .` |
 | List packages installed in current environment | `pip list` |
@@ -24,7 +24,7 @@
 | Create development environment | `hatch env create` |
 | Activate development environment | `hatch shell` |
 | Exit development envrironment | `exit` |
-| **Package Publishing** ||  |
+| ***Package Publishing*** ||  |
 | Build package sdist and wheel distributions | `hatch build` |
 | Publish package to Test PyPI | `hatch publish -r test` |
 | Install package from Test PyPI | `pip install -i https://test.pypi.org/simple/ [PACKAGE_NAME]` |
