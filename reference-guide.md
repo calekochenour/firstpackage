@@ -14,8 +14,8 @@
 | List hatch commands | hatch -h |
 | Open location of hatch config file | hatch config explore |
 | Print contents of hatch config file | hatch config show |
-| Create Python package structure and baseline contents | hatch new [PACKAGE_NAME] |
-| Install Python package locally in editable mode | python -m pip install -e . |
+| Create package structure and baseline contents | hatch new [PACKAGE_NAME] |
+| Install package locally in editable mode | python -m pip install -e . |
 | List packages installed in current environment | pip list |
 | Install package from GitHub | pip install git+https://github.com/user/repo.git@branch_or_tag |
 | Create a development environment with package in editable mode and all dependencies | hatch env create |
