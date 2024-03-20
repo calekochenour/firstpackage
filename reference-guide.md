@@ -25,7 +25,7 @@
 | Publish package to Test PyPI | hatch publish -r test |
 | Install package from Test PyPI | pip install -i https://test.pypi.org/simple/ [PACKAGE_NAME] |
 | Publish package to PyPI | hatch publish |
-| Install package from PyPI | pip install -i https://test.pypi.org/simple/ [PACKAGE_NAME] |
+| Install package from PyPI | pip install -i https://pypi.org/simple/ [PACKAGE_NAME] |
 | Install grayskull | pipx install grayskull |
 | Create conda-forge recipe | grayskull pypi [PACKAGE_NAME] |
 | Check that package installs properly with dependencies | pip check |
